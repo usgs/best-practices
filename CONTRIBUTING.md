@@ -1,5 +1,5 @@
 Requests for new guidelines and updates to existing guidelines are
-welcome from the community. Requests can be made on the
+welcome from the community. Questions can be asked on the
 [issues page](https://github.com/usgs/best-practices/issues). Before
 creating a new issue, please take a moment to search and make sure a
 similar issue does not already exist.
