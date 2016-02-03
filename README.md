@@ -1,7 +1,12 @@
 # U.S. Geological Survey Best Practices
-Documents best practices for software development within the U.S. Geological Survey
 
-The guidelines in this project should reflect the following values for software development:
+This repository represents an effort to strengthen the software community within
+the U.S. Geological Survey and follow the open source efforts promoted by the
+executive level of the federal government. The intent being this be a community
+built project where all users are free to contribute. All users are encouraged
+to contribute and comment on issues and pull requests.
+
+## Guiding Principles
 - Produce/Accomplish 
 - Communicate 
 - Develop buy-in
