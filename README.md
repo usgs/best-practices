@@ -1,4 +1,4 @@
-# best-practices
+# U.S. Geological Survey Best Practices
 Documents best practices for software development within the U.S. Geological Survey
 
 The guidelines in this project should reflect the following values for software development:
