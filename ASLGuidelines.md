@@ -1,6 +1,6 @@
 #  Guidelines for Code Documentation
 
-The Albuquderque Seismological Laboratory (ASL) has a diverse number of different types of code written in various languages by different people and during different time periods (from scientists, to professional programmers, to people who think they are professional programmers).  This makes it necessary for everyone writing code to follow a number of standards so that the code can be modified/fixed in the future.  The aim of this is to improve the readability of the code and make it more maintainable.  
+The Albuquerque Seismological Laboratory (ASL) has a diverse number of different types of code written in various languages by different people and during different time periods (from scientists, to professional programmers, to people who think they are professional programmers).  This makes it necessary for everyone writing code to follow a number of standards so that the code can be modified/fixed in the future.  The aim of this is to improve the readability of the code and make it more maintainable.  
 
 Below are some “best practices” and other methods for documenting and version controlling ASL code.  Since every rule is meant to be broken these should be viewed as general guidelines and not hard and fast rules.  However, we should also strive to make our documentation better when we are breaking these rules.  The ultimate goal is to make our code more easily maintained.  
 
