@@ -80,3 +80,19 @@ For example:
 1.1.1 would be the first major version, with the first minor version, and one bug fix.
 
 You should aim to make your code have some indication of the version number so that people can verify which version they are running.  Remember to have you releases code reviewed as well as user reviewed to avoid introducing new bugs.  When code with minor or major revisions are released include release notes about the changes.  
+
+### Unit Testing
+
+All production code should have a suite of unit tests.   Our goal isn't to hit a specific percent coverage or number of tests, but instead to make sure we have tests that cover the boundary cases as well as typical use cases.  Our tests should be a mix of unit and integration tests.  A few things should be kept in mind: 
+
+*Do not write tests that code around known issues:* Instead write the test that will knowingly fail and deal with it at a later date.  Remember we want good code, not bad code that looks good.
+
+*Do not write unreadable/complicated tests:* Our tests should in someway be examples for typical use cases that could help someone understand how a piece of code works.
+
+*Write tests that test the code:* If you add an integration type test that depends on internal code, without unit tests, go ahead and add unit tests.  Moving forward you should improve your coverage.
+
+*When you add a feature add a test:* We want to avoid backfilling testing "debt" as much as possible.  For the A+ overachiever you can write tests before you write the code.
+
+*Use common test suites:* Avoid using non-standard test suites.
+
+*Push to master when your tests pass:* Avoid pushing to the master branch when you have failing tests.  Instead push to a devel branch and fix the code before the push to master.  
