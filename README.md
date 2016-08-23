@@ -34,6 +34,10 @@ A new software release policy is about to come out from the USGS. This section h
 
 * [DOIs for software](doi.md)
 
+## Using [Issues](issues/)
+We're starting to use this repo to discuss issues related to best practices and things to do with Software Release in the USGS. We are moving FAQs that were formerly under a different tool into issues, so you will see some things in there attributed to who posted them originally. We'll try to get some labels going to help distinguish different kinds of issues.
+
+Anyone can post to issues, which is what we want. This is generally an open dialog about how we are doing things. Be aware that we are talking about USGS matters in an open and public forum, and there will be some insider baseball (e.g., "IPDS" and "BAO"). We do welcome other viewpoints and input, but you'll see a lot of stuff that might require a little inside knowledge.
 
 ## DevOps
 
