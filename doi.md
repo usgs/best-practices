@@ -1,5 +1,5 @@
 # Digital Object Identifiers for Software
-The software release policy requires official USGS software releases to obtain a software DOI when the software is officially released. This will create a DOI with a resource-type of "software" in the 10.5066 ID space that we use for all USGS data, software, and other products outside the USGS Series Reports (that get DOIs from CrossRef).
+The software release policy requires official USGS software releases to obtain a DOI when the software is officially released. This will create a DOI with a resource-type of "software" in the 10.5066 ID space that we use for all USGS data, software, and other products outside the USGS Series Reports (that get DOIs from CrossRef).
 
 You can create a DOI in a couple of different ways:
 

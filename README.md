@@ -17,7 +17,7 @@ pull requests.
 - Practice (as in practice what we preach, become practitioners!)
 
 ## Developement
-### Code Reviews
+### [Code Reviews](CodeReview.md)
 Considerations when conducting code reviews:
 <<<<<<< HEAD
 

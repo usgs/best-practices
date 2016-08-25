@@ -4,4 +4,4 @@ The new [Federal Source Code Policy](https://sourcecode.cio.gov/) has been relea
 ## Code Inventory
 One of the things that M-16-21 will be implementing is a government-wide inventory of software code. Similar to what happened with M-13-13, the open data policy, we will be asked to provide a listing of all the software we have in the open and what we have not open, including needing to provide a justification for close source codes.
 
-There is an interesting [discussion](https://github.com/WhiteHouse/source-code-policy/issues/116) happening on the topic of how to do the inventory on the
+There is an interesting [discussion](https://github.com/WhiteHouse/source-code-policy/issues/116) happening on the topic of how to do the inventory.
