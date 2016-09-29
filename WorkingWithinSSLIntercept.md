@@ -42,21 +42,27 @@ CA file:
 
 ## OS X
 OS X stores certificates in the keychain, which is not used by most command line
-tools.  Homebrew provides a base CA file via the openssl package, there are
-other sources such as cURL ( https://curl.haxx.se/docs/caextract.html ).
+tools.
 
+Start by copying an existing CA certificate bundle.  There are a couple options:
+- copy from a linux distro
+- copy the openssl bundle from homebrew
+  ( /path/to/homebrew/etc/openssl/cert.pem )
+- download the Mozilla bundle from cURL
+  ( https://curl.haxx.se/ca/cacert.pem )
+
+Then add the custom certificate to the end:
 ```
-# find ca file
-HOMEBREW_PREFIX=`brew config | grep HOMEBREW_PREFIX | awk '{print $2}'`
-CA_FILE=$HOMEBREW_PREFIX/etc/openssl/cert.pem
+# setup CA certificate bundle
+CA_FILE=$HOME/cacert.pem
 # add a trailing newline character
 echo >> $CA_FILE
-# add certificate
+# add custom certificate
 cat CustomCA.crt >> $CA_FILE
 ```
 
 CA file:
-`$HOMEBREW_PREFIX/etc/openssl/cert.pem`
+`$HOME/cacert.pem`
 
 
 # 2) Configure apps to use complete CA file
