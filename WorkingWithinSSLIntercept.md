@@ -114,3 +114,9 @@ export PIP_CERT=/path/to/cert.pem
 
 ## Python
 Python uses the `SSL_CERT_FILE` environment variable (see above).
+
+## Wget
+Configure `ca_certificate` in `$HOME/.wgetrc`
+```
+ca_certificate=/path/to/cert.pem
+```
