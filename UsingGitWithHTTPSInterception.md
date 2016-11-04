@@ -29,8 +29,8 @@ HTTPS is a secure protocol, but it is not as secure as SSH (see [note 2](#note-2
       * Using the VPN from home
       * Using the VPN from a coffee shop
       * Using the VPN from wifi in a DOI building
-    * Not OK:
-       * Using wifi connections in DOI buildings without using the VPN. Although you may be able to , this configuration could .
+    * Not OK (see [note 3](#note_3) for elaboration):
+       * Using wifi connections in DOI buildings without using the VPN.
        * Using wifi at home without using the VPN
        * Using wired internet at home without using the VPN
        * Using wifi at a coffee shop without using the VPN
@@ -75,3 +75,6 @@ For example, besides git, SSL intercept can also cause issues when running wget,
 ####Note 2
 
 The problem isn't so much the SSL protocol itself, but rather the fallible forest of trust that automatic SSL certificate verification relies on. Dan Goodin wrote [an excellent explanation of these problems](http://www.theregister.co.uk/2011/04/11/state_of_ssl_analysis/?page=1). By contrast, SSH keys are verified by the user on a case-by-case basis.
+
+####Note 3
+Although a user may be able to access the HTTPS Intercept appliance's certificate while outside of the DOI network, the certificate would be subject to tampering while in transit across public networks. The DOI has ignored requests to make their HTTPS Intercept appliance's certificate available securely over HTTPS. Accordingly, the only way to ensure that we are telling our programs to trust the correct cert is to ensure that our request for the appliance's certificate stays inside of the DOI's internal networks.
