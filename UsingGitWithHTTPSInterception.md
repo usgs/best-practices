@@ -14,6 +14,8 @@ SSH is a more secure way to communicate with your remote git server (like GitHub
 * Then follow these instructions for changing existing repos from HTTPS to SSH remote urls
  * https://help.github.com/articles/changing-a-remote-s-url/#switching-remote-urls-from-https-to-ssh
 * You can get the ssh url for your existing repos through the GitHub web ui by clicking the "Clone or download" button, and then the "Use SSH" link as shown in the following screenshot.
+
+![switch to ssh clone url](switch_to_cloning_with_ssh.png)
 * Troubleshooting
  * Windows-only: If you need to import an OpenSSH key into Pageant, follow these instructions
    https://kb.site5.com/shell-access-ssh/how-to-convert-ssh-keys-to-ppk-format/
@@ -40,6 +42,8 @@ HTTPS is a secure protocol, but it is not as secure as SSH (see note 2). Day-to-
 
 ## Do Not
 Some misguided advice has been circulating that advocates for shutting off HTTPS certificate verification via commands like:
+ 
+![commands that shouldn't be run](do_not_shut_off_ssl_cert_verification.png)
  
 DO NOT DO THAT. It is a threat to our security and scientific integrity.
 
