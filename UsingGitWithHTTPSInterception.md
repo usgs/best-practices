@@ -3,7 +3,7 @@
 This document is an informal collaboration between USGS users of git. The document is not an official recommendation. Pull requests to improve this guide are welcomed.
 
 ## Background
-The USGS is decrypting HTTPS traffic for the purposes of security scanning. This causes many programs (see note 1) to break unless additional configuration steps are performed. Git requires reconfiguration. There are two ways to get git working again. One way involves updating git's HTTPS configuration. Another way involves switching git to a different protocol called SSH.
+The USGS is decrypting HTTPS traffic for the purposes of security scanning. This causes many programs (see [note 1](#note-1)) to break unless additional configuration steps are performed. Git requires reconfiguration. There are two ways to get git working again. One way involves updating git's HTTPS configuration. Another way involves switching git to a different protocol called SSH.
 
 ## Switch git to use SSH
 SSH is a more secure way to communicate with your remote git server (like GitHub, etc.). SSH is also easier to use day-to-day because it eliminates password prompts. Compared to HTTPS, SSH can be slightly more difficult to set up when running Windows. Mac and Linux users should have an easier time.
@@ -21,7 +21,7 @@ SSH is a more secure way to communicate with your remote git server (like GitHub
    https://kb.site5.com/shell-access-ssh/how-to-convert-ssh-keys-to-ppk-format/
 
 ## To Continue Using git with HTTPS (a.k.a. SSL)
-HTTPS is a secure protocol, but it is not as secure as SSH (see note 2). Day-to-day use of HTTPS is not as convenient because it requires regular password prompts, whereas SSH does not. HTTPS may be easier to set up initially than SSH.
+HTTPS is a secure protocol, but it is not as secure as SSH (see [note 2](#note-2)). Day-to-day use of HTTPS is not as convenient because it requires regular password prompts, whereas SSH does not. HTTPS may be easier to set up initially than SSH.
 
 * Ensure your machine is connected to a DOI internal network
    * OK:
@@ -66,3 +66,12 @@ Now that you are using a safe configuration, you will need to perform some foren
 * Inspect every commit in the history in all of the repositories that you have write access to. This includes repositories on your local hard drives, personal forks at git hosting sites, and organizational repositories at git hosting sites that you have write access to.
 * On git hosting sites (like GitHub, etc), ensure that your user's affiliation to various teams remains the same.
 * If you were an administrator of a team or organization on your git hosting site (like GitHub, etc), ensure that no members of the team/org have been added or removed. Ensure that members have the expected permissions.
+
+## Notes
+####Note 1
+
+For example, besides git, SSL intercept can also cause issues when running wget, initializing or updating a Vagrant box, or package managers like apt, yum, or dnf.
+
+####Note 2
+
+The problem isn't so much the SSL protocol itself, but rather the fallible forest of trust that automatic SSL certificate verification relies on. Dan Goodin wrote [an excellent explanation of these problems](http://www.theregister.co.uk/2011/04/11/state_of_ssl_analysis/?page=1). By contrast, SSH keys are verified by the user on a case-by-case basis.
