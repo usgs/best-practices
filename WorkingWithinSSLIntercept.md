@@ -1,6 +1,8 @@
 Working within SSL Intercept
 ============================
 
+This page details how to get many different programs working with SSL intercept. [Another page](UsingGitWithHTTPSInterception.md) details how to configure git.
+
 # 1) Build complete CA file including SSL Intercept certificate
 
 CustomCA.crt must be a PEM encoded file.
