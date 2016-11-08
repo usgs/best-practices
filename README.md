@@ -16,7 +16,7 @@ pull requests.
 - Be open
 - Practice (as in practice what we preach, become practitioners!)
 
-## Developement
+## Development
 ### [Code Reviews](CodeReview.md)
 Considerations when conducting code reviews:
 * Application Security – This reminds developers to handle buffer overruns, mask or remove any internal resource references, and verifying server-side validity checks to coincide with client-side ones.  Often overlooked security items such as session information, transaction controls, developer back-doors, and hard-coded passwords are questioned.
