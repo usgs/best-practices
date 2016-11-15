@@ -102,6 +102,7 @@ Configure `cafile` in `$HOME/.npmrc`
 ```
 cafile=/path/to/cert.pem
 ```
+To install packages globally via commands like `sudo npm install --global less`, you may need to add the same line to `/root/.npmrc`.
 
 ## Pip
 Even when using Anaconda virtual environments, some packages must be installed
