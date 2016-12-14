@@ -86,6 +86,13 @@ Configure `ssl_verify` variable
 conda config --set ssl_verify /path/to/cert.pem
 ```
 
+## cURL
+Configure ```CURL_CA_BUNDLE``` environment variable in ```$HOME/.bash_profile```
+
+```sh
+export CURL_CA_BUNDLE=/path/to/cert.pem
+```
+
 ## Java
 Java applications use a system/application keystore for CA certificates.
 Install the custom certificate in your system/application keystore.
@@ -122,11 +129,4 @@ Python uses the `SSL_CERT_FILE` environment variable (see above).
 Configure `ca_certificate` in `$HOME/.wgetrc`
 ```
 ca_certificate=/path/to/cert.pem
-```
-
-## cURL
-Configure ```CURL_CA_BUNDLE``` environment variable in ```$HOME/.bash_profile```
-
-```sh
-export CURL_CA_BUNDLE=/path/to/cert.pem
 ```
