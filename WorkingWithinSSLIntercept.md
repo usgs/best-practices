@@ -123,3 +123,10 @@ Configure `ca_certificate` in `$HOME/.wgetrc`
 ```
 ca_certificate=/path/to/cert.pem
 ```
+
+## cURL
+Configure in your bash_profile file
+
+```sh
+export CURL_CA_BUNDLE=/path/to/cert.pem
+```
