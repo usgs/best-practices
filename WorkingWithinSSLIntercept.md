@@ -125,7 +125,7 @@ ca_certificate=/path/to/cert.pem
 ```
 
 ## cURL
-Configure in your bash_profile file
+Configure ```CURL_CA_BUNDLE``` environment variable in ```$HOME/.bash_profile```
 
 ```sh
 export CURL_CA_BUNDLE=/path/to/cert.pem
