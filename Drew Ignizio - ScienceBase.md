@@ -1,4 +1,4 @@
-##Refined Guidance will be Necessary to Help Authors Distinguish Between 'Data' and 'Software'
+## Refined Guidance will be Necessary to Help Authors Distinguish Between 'Data' and 'Software'
 "Data" and "Software" fall neatly into two camps in some cases, but in many scenarios, these two types 
 of resources may blur seamlessly into one another. Arguably, some processing files for scientific 
 analysis (such as R or Python) scripts are never written or intended to be 'deployable software' in 
@@ -16,7 +16,7 @@ but the desirable outcome should result in well-documented data and software bei
 reference-able resource in their own right, with no more distinction about whether something is 'data' or 
 'software' than is needed to be helpful.
 
-##GitHub and USGS BitBucket (and DOIs)
+## GitHub and USGS BitBucket (and DOIs)
 
 There are dedicated hosting platforms that are designed to dovetail with Version Control Systems (VCS) such as Git 
 that are widely used in professional software development. These include GitHub (www.github.com) which is 
@@ -45,7 +45,7 @@ For software projects that already reside on GitHub, the simplest path for autho
 to the BitBucket location to meet federal requirements, mint a DOI to the BitBucket location, and sync their project 
 to both remotes on a rolling basis.
 
-##ScienceBase (and DOIs)
+## ScienceBase (and DOIs)
 ScienceBase is a robust data sharing platform that *can* present a link off to a location in BitBucket or GitHub, 
 but ScienceBase is not a version-controlled repository. For software that changes regularly, this system may not 
 be the best option for authors as it does not readily handle commits and versioning; BitBucket is a superior 
@@ -76,14 +76,14 @@ architecture.
 I would encourage the USGS (and software developers) to consider minting DOIs only against a Universal Resource 
 Locator (URL) where a described resource actually resides. 
 
-##The USGS May Benefit from an Identified Group of Software Reviewers with Proper Experience
+## The USGS May Benefit from an Identified Group of Software Reviewers with Proper Experience
 
 A qualified group of individuals with software experience and the ability to answer questions about code, 
 software, and review guidance will be necessary. A programmer working in a given language would benefit 
 from having other individuals familiar with that type of development to QC code, provide guidance, and 
 conduct a meaningful review.
 
-##Markdown Files, In-Code Documentation, and Associated Publications Collectively Comprise the Metadata for Software
+## Markdown Files, In-Code Documentation, and Associated Publications Collectively Comprise the Metadata for Software
 
 Markdown is a very common file format for documentation in the software realm. "ReadMe.md" files are an established 
 convention among the development community and the ability to display these files in an easy-to-read format is also 
@@ -93,7 +93,7 @@ certainly be something reviewers look for. Associated manuscripts often also acc
 guidance on how these should be paired (without asking authors to unduly repeat documentation, install instructions, 
 usage notes, etc.) should be provided.
 
-##Tracking all USGS Software Releases in a Coherent Manner Will Need Planning
+## Tracking all USGS Software Releases in a Coherent Manner Will Need Planning
 
 If software are hosted in multiple locations (instead of a single established location for all USGS authors) it will 
 be necessary for the Bureau to have a way to track all of these products. The USGS Information Product Delivery System 
@@ -103,7 +103,7 @@ enable any necessary tracking or organized presentation of software resources. W
 a DOI moving forward, these may map to various locations where the software are hosted. Convention for how these DOIs are 
 issued would be beneficial to adopt. 
 
-##As Guidance and Policy are Finalized Consider Test Cases
+## As Guidance and Policy are Finalized Consider Test Cases
 As guidance transitions into formal policy, the consideration of test cases (over the course of a year or so) could be 
 very valuable. Circumstances that were previously not considered, unique cases that challenge definitions and prescribed 
 workflows, and cases where real life software projects do not neatly lend themselves to this new policy can all be expected 
