@@ -29,14 +29,12 @@ Thread Safeness – This section helps identify the safety of global variables a
 * Coding Conventions - Adherence to coding standards/style/conventions (add link or references) helps to ensure consistency and readability and thus improve maintainability
 
 ## Software Release
-A new software release policy is about to come out from the USGS. This section has some resources for USGS employees and collaborators looking to understand how we do things in terms of review and release.
+A new [software release policy](https://www2.usgs.gov/usgs-manual/im/IM-OSQI-2016-01.html) is available from the USGS. This section has some resources for USGS employees and collaborators looking to understand how we do things in terms of review and release.
 
 * [DOIs for software](doi.md)
 
 ## Using [Issues](https://github.com/usgs/best-practices/issues/)
-We're starting to use this repo to discuss issues related to best practices and things to do with Software Release in the USGS. We are moving FAQs that were formerly under a different tool into issues, so you will see some things in there attributed to who posted them originally. We'll try to get some labels going to help distinguish different kinds of issues.
-
-Anyone can post to issues, which is what we want. This is generally an open dialog about how we are doing things. Be aware that we are talking about USGS matters in an open and public forum, and there will be some insider baseball (e.g., "IPDS" and "BAO"). We do welcome other viewpoints and input, but you'll see a lot of stuff that might require a little inside knowledge.
+sWe use the issues in this repo to informally discuss the practice of software development, review, and release in the USGS. Official guidance is found on the [USGS Fundamental Science Practices web site](https://www2.usgs.gov/fsp/).
 
 ## DevOps
 
