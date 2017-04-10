@@ -34,7 +34,7 @@ A new [software release policy](https://www2.usgs.gov/usgs-manual/im/IM-OSQI-201
 * [DOIs for software](doi.md)
 
 ## Using [Issues](https://github.com/usgs/best-practices/issues/)
-sWe use the issues in this repo to informally discuss the practice of software development, review, and release in the USGS. Official guidance is found on the [USGS Fundamental Science Practices web site](https://www2.usgs.gov/fsp/).
+We use the issues in this repo to informally discuss the practice of software development, review, and release in the USGS. Official guidance is found on the [USGS Fundamental Science Practices web site](https://www2.usgs.gov/fsp/).
 
 ## DevOps
 
