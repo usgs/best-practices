@@ -16,7 +16,7 @@ openssl -in CustomCA.der -inform DER -out CustomCA.crt -outform PEM
 ## Linux:
 
 On linux systems the `.crt` extension matters. The following script may be
-of some use:
+of some use on RedHat (and similar) or Debian (and similar) distributions:
 ```
 #!/bin/bash
 
