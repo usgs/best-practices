@@ -36,6 +36,7 @@ elif [ ! -f /etc/redhat-release ] ; then
   update-ca-certificates
 fi
 ```
+Administrators using Chef to manage their infrastructure might also find from the [CIDA Chef Cookbook](https://github.com/USGS-CIDA/chef-cookbook-doi-ssl-filtering) (CentOS 6.x).
 
 ### Debian
 As root:
