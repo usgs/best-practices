@@ -136,6 +136,15 @@ cafile=/path/to/cert.pem
 ```
 To install packages globally via commands like `sudo npm install --global less`, you may need to add the same line to `/root/.npmrc`.
 
+## Bower
+Configure `ca` in `$HOME/.bowerrc`
+```
+{
+"ca": "/path/to/cert.pem"
+}
+```
+or you can use the option `--config.ca=/path/to/cert.pem` when using the bower command to install packages
+
 ## Pip
 Even when using Anaconda virtual environments, some packages must be installed
 using pip.
