@@ -15,7 +15,28 @@ openssl -in CustomCA.der -inform DER -out CustomCA.crt -outform PEM
 
 ## Linux:
 
-On linux systems the `.crt` extension matters.
+On linux systems the `.crt` extension matters. The following script may be
+of some use on RedHat (and similar) or Debian (and similar) distributions:
+```
+#!/bin/bash
+
+WGETDEB="wget http://blockpage.doi.gov/images/DOIRootCA.crt -N -P /usr/share/ca-certificates/extra/"
+WGETRPM="wget http://blockpage.doi.gov/images/DOIRootCA.crt -N -P /etc/pki/ca-trust/source/anchors/"
+
+if [ -f /etc/redhat-release ] ; then
+  echo "Installing for Cent/RHEL 32"
+  yum -y install ca-certificates
+  update-ca-trust force-enable
+  $WGETRPM
+  update-ca-trust extract
+elif [ ! -f /etc/redhat-release ] ; then
+  echo "Installing for Debian/Ubuntu"
+  $WGETDEB
+  echo "extra/DOIRootCA.crt" >> /etc/ca-certificates.conf
+  update-ca-certificates
+fi
+```
+Administrators using Chef to manage their infrastructure might also find from the [CIDA Chef Cookbook](https://github.com/USGS-CIDA/chef-cookbook-doi-ssl-filtering) (CentOS 6.x).
 
 ### Debian
 As root:
