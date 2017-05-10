@@ -1,16 +1,17 @@
-Software State
-==============
+Software Stages
+===============
 
 During the development lifecycle, a software project may be in one or more of
-the following states.
+the following stages.
 
 
 Scratch Software
 ----------------
 
-These exist in the user account space on GitHub. For example:
-`https://github.com/{user}/{project}.git`. Where `{user}` is your user account
-name and `{project}` is the name of the software project repository.
+These exist in folders on local workstations or possibly in the user account
+space on GitHub. For example: `https://github.com/{user}/{project}.git`. Where
+`{user}` is your user account name and `{project}` is the name of the software
+project repository.
 
 These are your own and no restrictions are placed on them.
 
@@ -29,4 +30,4 @@ to migration.
 
 
 
-[1]: ./review.md#administrative
+[1]: ./reviews.md#administrative
