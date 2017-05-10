@@ -25,9 +25,15 @@ project repository.
 
 These may be initiated directly in the USGS organization or may be
 migrated from a scratch software project. In the latter case, the scratch
-software project must receive an [administrative peer review][1] review prior
+software project must receive a peer [administrative security review][1] prior
 to migration.
 
 
+Approved Software
+-----------------
 
-[1]: ./reviews.md#administrative
+
+
+
+
+[1]: ./reviews.md#administrative-security-review
