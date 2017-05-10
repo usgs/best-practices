@@ -16,7 +16,7 @@ Equally important to performing the peer review is documenting the review and
 reconciliation process. While similar at a high level, this process varies
 slightly depending on the current project state.
 
-**For _new_ [preliminary software...][???]**
+**For _new_ [preliminary software...][3]**
 
 > This review occurs prior to migrating scratch software into the USGS
 > organization on GitHub.
@@ -31,14 +31,14 @@ slightly depending on the current project state.
    - This may involve iteratively fixing issues the reviewer points out
 
 > Note: Once the review is complete you typically want to finish the
-> [initial migration process][???] as outlined in the workflows section.
+> [initial migration process][4] as outlined in the workflows section.
 
-**For _existing_ [preliminary software][???]...**
+**For _existing_ [preliminary software][3]...**
 
 > Every change to a repository in the USGS organization on GitHub must receive
 > at least an administrative review. This can be done using pull requests. The
 > following steps assume you are following the
-> [integration manager workflow][???]
+> [integration manager workflow][5].
 
  - Submit a pull request from your user fork of the USGS repository back to
    the primary USGS repository
@@ -50,11 +50,11 @@ slightly depending on the current project state.
 
 **For [approved software] tags[???]...
 
- - Create a release candidate _branch_
-   - Using [semantic versioning][???] this may be something like:
-     `git checkout -b vMAJOR.MINOR.PATCH-rc1-Branch`
+ - Create a release candidate reconciliation _branch_
+   - Using [semantic versioning][6] this may be something like:
+     `git checkout -b vMAJOR.MINOR.PATCH-rc1-reconciliation`
  - Create a release candidate _tag_
-   - Using [semantic versioning][???] this may be something like:
+   - Using [semantic versioning][6] this may be something like:
      `git tag -am 'vMAJOR.MINOR.PATCH-rc1' vMAJOR.MINOR.PATCH-rc1`
  - Create an issue on the project issues page requesting the appropriate level
    of review be performed
@@ -64,7 +64,8 @@ slightly depending on the current project state.
      making commits back to the release candidate _branch_
 
 > Note: Once the review is complete you typically want to finish the
-> [release process][???] as outlined in the workflows section
+> [release process for approved software][7] as outlined in the workflows
+> section.
 
 
 Administrative Security Review
@@ -93,8 +94,8 @@ All [project types][1] require this level of review.
 
 Projects in the following states require this level of review
 
- - [Preliminary Software][4]
- - [Approved Software][5]
+ - [Preliminary Software][8]
+ - [Approved Software][9]
 
 
 Code Review
@@ -124,7 +125,7 @@ All [project types][1] require this level of review.
 
 Projects in the following states require this level of review
 
- - [Approved Software][5]
+ - [Approved Software][9]
 
 ### Documentation
 
@@ -146,21 +147,23 @@ programming knowledge.
 
 ### Project Types
 
- - [Scientific Software][6]
+ - [Scientific Software][10]
 
 ### Project States
 
 Projects in the following states require this level of review
 
- - [Approved Software][5]
-
-### Documentation
+ - [Approved Software][9]
 
 
 
-[1]: ./project_type.md
-[2]: ./project_state.md
-[3]: https://github.com/usgs/
-[4]: ./project_state.md#preliminary-software
-[5]: ./project_state.md#approved-software
-[6]: ./project_type.md#scientific-software
+[1]: ./types.md
+[2]: ./stages.md
+[3]: ./stages.md#preliminary-software
+[4]: ./releases.md#preliminary-software-initial-migration
+[5]: ./workflow.md
+[6]: http://semver.org/
+[7]: ./releases.md#approved-software-release
+[8]: ./stages.md#preliminary-software
+[9]: ./stages.md#approved-software
+[10]: ./types.md#scientific-software
