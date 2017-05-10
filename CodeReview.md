@@ -1,2 +1,0 @@
-# Software Code Review
-TO DO: Lots of questions from BAOs and others about how to conduct code reviewes at different levels. We need to put together some appropriate references here and write up some stuff.
