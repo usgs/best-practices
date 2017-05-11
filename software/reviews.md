@@ -42,19 +42,19 @@ slightly depending on the current project state.
 
  - Submit a pull request from your user fork of the USGS repository back to
    the primary USGS repository
-   - Assign a reviewer to the pull request
+   - Assign (or request) a reviewer to the pull request
  - Wait for reviewer to approve the changes
    - This may involve iteratively fixing issues the reviewer points out
  - Merge (or better, have the reviewer merge) the changes into the USGS
    repository
 
-**For [approved software] tags[???]...
+**For [approved software][6] tags...
 
  - Create a release candidate reconciliation _branch_
-   - Using [semantic versioning][6] this may be something like:
+   - Using [semantic versioning][7] this may be something like:
      `git checkout -b vMAJOR.MINOR.PATCH-rc1-reconciliation`
  - Create a release candidate _tag_
-   - Using [semantic versioning][6] this may be something like:
+   - Using [semantic versioning][7] this may be something like:
      `git tag -am 'vMAJOR.MINOR.PATCH-rc1' vMAJOR.MINOR.PATCH-rc1`
  - Create an issue on the project issues page requesting the appropriate level
    of review be performed
@@ -64,7 +64,7 @@ slightly depending on the current project state.
      making commits back to the release candidate _branch_
 
 > Note: Once the review is complete you typically want to finish the
-> [release process for approved software][7] as outlined in the workflows
+> [release process for approved software][8] as outlined in the workflows
 > section.
 
 
@@ -94,8 +94,8 @@ All [project types][1] require this level of review.
 
 Projects in the following states require this level of review
 
- - [Preliminary Software][8]
- - [Approved Software][9]
+ - [Preliminary Software][9]
+ - [Approved Software][6]
 
 
 Code Review
@@ -125,7 +125,7 @@ All [project types][1] require this level of review.
 
 Projects in the following states require this level of review
 
- - [Approved Software][9]
+ - [Approved Software][6]
 
 ### Documentation
 
@@ -153,7 +153,7 @@ programming knowledge.
 
 Projects in the following states require this level of review
 
- - [Approved Software][9]
+ - [Approved Software][6]
 
 
 
@@ -162,8 +162,8 @@ Projects in the following states require this level of review
 [3]: ./stages.md#preliminary-software
 [4]: ./releases.md#preliminary-software-initial-migration
 [5]: ./workflow.md
-[6]: http://semver.org/
-[7]: ./releases.md#approved-software-release
-[8]: ./stages.md#preliminary-software
-[9]: ./stages.md#approved-software
+[6]: ./stages.md#approved-software
+[7]: http://semver.org/
+[8]: ./releases.md#approved-software-release
+[9]: ./stages.md#preliminary-software
 [10]: ./types.md#scientific-software
