@@ -31,7 +31,7 @@ slightly depending on the current project state.
    - This may involve iteratively fixing issues the reviewer points out
 
 > Note: Once the review is complete you typically want to finish the
-> [initial migration process][4] as outlined in the workflows section.
+> [initial migration process][4] as outlined in the releases section.
 
 **For _existing_ [preliminary software][3]...**
 
@@ -64,7 +64,7 @@ slightly depending on the current project state.
      making commits back to the release candidate _branch_
 
 > Note: Once the review is complete you typically want to finish the
-> [release process for approved software][8] as outlined in the workflows
+> [release process for approved software][8] as outlined in the releases
 > section.
 
 
@@ -161,7 +161,7 @@ Projects in the following states require this level of review
 [2]: ./stages.md
 [3]: ./stages.md#preliminary-software
 [4]: ./releases.md#preliminary-software-initial-migration
-[5]: ./workflow.md
+[5]: https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows#_integration_manager
 [6]: ./stages.md#approved-software
 [7]: http://semver.org/
 [8]: ./releases.md#approved-software-release
