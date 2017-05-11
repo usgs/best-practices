@@ -63,8 +63,8 @@ All approved software releases should be made from existing
    - Note: A single person may complete more than one type of review,
      completing the recommended review types may involve as few as two
      reviewers
- - Obtain science center director (or delegated authority) to publish an
-   approved software package
+ - Obtain approval from science center director (or delegated authority) to
+   publish an approved software package
  - Merge the release candidate reconciliation branch back into the master
    branch
  - Update the release candidate reconciliation branch DISCLAIMER.md file...
