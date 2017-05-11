@@ -51,9 +51,9 @@ See the [example project scaffold][8] for what a new project might look like.
 Next Steps
 ----------
 
-Learn more about different [software types][8] and [software stages][9]
-along with the corresponding [review types][10] required for each in order
-to [release the software][11] to various degrees.
+Learn more about different [software types][9] and [software stages][10]
+along with the corresponding [review types][11] required for each in order
+to [release the software][12] to various degrees.
 
 
 
@@ -64,7 +64,8 @@ to [release the software][11] to various degrees.
 [5]: https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows#_integration_manager
 [6]: https://help.github.com/articles/about-pull-requests/
 [7]: https://www2.usgs.gov/fsp/fsp_disclaimers.asp#11
-[8]: ./types.md
-[9]: ./stages.md
-[10]: ./reviews.md
-[11]: ./releases.md
+[8]: #TODO
+[9]: ./types.md
+[10]: ./stages.md
+[11]: ./reviews.md
+[12]: ./releases.md
