@@ -48,18 +48,12 @@ All software developed by the USGS should by default use an open-source license
 See the [example project scaffold][8] for what a new project might look like.
 
 
-Migrate Code into the USGS Organization
----------------------------------------
+Next Steps
+----------
 
-This can happen at any point while developing a project; even at the very
-beginning.
-
-Start by having your existing project (current project HEAD as well as entire
-project history) undergo an administrative reviewed. If you are starting a brand
-new project, you can skip this step.
-
-Once a project
-
+Learn more about different [software types][8] and [software stages][9]
+along with the corresponding [review types][10] required for each in order
+to [release the software][11] to various degrees.
 
 
 
@@ -70,3 +64,7 @@ Once a project
 [5]: https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows#_integration_manager
 [6]: https://help.github.com/articles/about-pull-requests/
 [7]: https://www2.usgs.gov/fsp/fsp_disclaimers.asp#11
+[8]: ./types.md
+[9]: ./stages.md
+[10]: ./reviews.md
+[11]: ./releases.md
