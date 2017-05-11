@@ -38,7 +38,7 @@ _new preliminary software_. If the project is to be developed as
 Preliminary Software Subsequent Release
 ---------------------------------------
 
-Each commit made to the USGS organization repositroy should have received
+Each commit made to the USGS organization repository should have received
 at least [adminstrative security review][1] for existing preliminary software
 prior to begining this process. If this is not the case, you must request
 this be completed and document the review and reconcilation process (possibly
