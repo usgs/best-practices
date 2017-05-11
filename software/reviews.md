@@ -127,8 +127,6 @@ Projects in the following states require this level of review
 
  - [Approved Software][6]
 
-### Documentation
-
 
 Subject Matter Expert Review
 ----------------------------
