@@ -32,8 +32,10 @@ to migration.
 Approved Software
 -----------------
 
-
+These are tags of preliminary software repositories that have gone through
+additional [reviews][2] for approved software.
 
 
 
 [1]: ./reviews.md#administrative-security-review
+[2]: ./reviews.md
