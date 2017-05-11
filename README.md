@@ -4,7 +4,10 @@ Example Project
 As part of the usgs/best-practices repository, this branch makes an effort to
 provide a starting point for new or empty projects. Recognizing each project
 and language is different and may come with its own set of best practices,
-these are merely reasonable guidelines from which to start.
+these are merely reasonable guidelines from which to start. Official
+policy is maintained in the USGS website. In the case of any direct conflict
+between this example project and official USGS policy, one is directed to defer
+to official USGS policy.
 
 
 Contents
