@@ -16,4 +16,4 @@ authorized or unauthorized use of the information.
 
 
 
-[1]: https://www.usgs.gov/
+[1]: https://www2.usgs.gov/fsp/policies.asp
