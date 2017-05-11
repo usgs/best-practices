@@ -74,8 +74,12 @@ include only the proper disclaimer.
 This file contains the license under which the project source code is released.
 The abscence of a license does not automatically make something open-source and
 therefor this file (or similar documentation) is **required**. Typically
-government work falls under "Public Domain", however [CC0-1.0][3] may be used for
-international recognition.
+government work falls under "Public Domain", however [CC0-1.0][3] may be used
+for international recognition.
+
+Additionally, licenses for any library/code dependencies used or distributed
+with this software package should be identified and listed here in compliance
+with the license governing said library/code.
 
 
 ### ./README.md
