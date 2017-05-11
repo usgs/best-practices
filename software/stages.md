@@ -19,9 +19,9 @@ These are your own and no restrictions are placed on them.
 Preliminary Software
 --------------------
 
-These exist in the USGS organization on GitHub. For example:
-`https://github.com/usgs/{project}.git`. Where `{project}` is the name of the
-project repository.
+These exist in the publicly accessible USGS organization on GitHub.
+For example: `https://github.com/usgs/{project}.git`. Where `{project}` is
+the name of the project repository.
 
 These may be initiated directly in the USGS organization or may be
 migrated from a scratch software project. In the latter case, the scratch
