@@ -23,7 +23,7 @@ slightly depending on the current project state.
 
  - Put the software in a version control repository accessible by the intended
    reviewer
- - Create an issue in the software release reviews project requesting
+ - Create an issue in the [software release reviews][11] project requesting
    a review on the software
    - Include a link to where the software is accessible
    - Add a label to the issue indiciating the type of review being requested
@@ -167,3 +167,4 @@ Projects in the following states require this level of review
 [8]: ./releases.md#approved-software-release
 [9]: ./stages.md#preliminary-software
 [10]: ./types.md#scientific-software
+[11]: https://code.usgs.gov/software-release/reviews/issues/new
