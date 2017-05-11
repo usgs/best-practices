@@ -86,13 +86,13 @@ migrating an existing project into the USGS organization on GitHub, it is
 important to remember that the entire project history needs to be reviewd if
 that history is to be maintained after migration.
 
-### Project Types
+### Applicable Software Types
 
 All [project types][1] require this level of review.
 
-### Project States
+### Applicable Software Stages
 
-Projects in the following states require this level of review
+Software in the following stages require this level of review:
 
  - [Preliminary Software][9]
  - [Approved Software][6]
@@ -115,15 +115,15 @@ checks include:
 
 These reviews should be performed by a **trusted developer** with applicable
 programming knowledge. This person need not have thorough subject-matter
-knowledge on the project topic.
+knowledge on the software topic.
 
-### Project Types
+### Applicable Software Types
 
-All [project types][1] require this level of review.
+All [software types][1] require this level of review.
 
-### Project States
+### Applicable Software Stages
 
-Projects in the following states require this level of review
+Software in the following stages require this level of review:
 
  - [Approved Software][6]
 
@@ -143,13 +143,13 @@ These reviews should be performed by a **trusted scientific expert** with
 applicable subject-matter knowledge as well as sufficient applicaple
 programming knowledge.
 
-### Project Types
+### Applicable Software Types
 
  - [Scientific Software][10]
 
-### Project States
+### Applicable Software Stages
 
-Projects in the following states require this level of review
+Software in the following stages require this level of review:
 
  - [Approved Software][6]
 
