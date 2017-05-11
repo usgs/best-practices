@@ -7,8 +7,8 @@ built project. All users are encouraged to contribute and comment on issues and
 pull requests.
 
 ## Guiding Principles
-- Produce/Accomplish 
-- Communicate 
+- Produce/Accomplish
+- Communicate
 - Develop buy-in
 - Integrate
 - Iterate
@@ -17,7 +17,7 @@ pull requests.
 - Practice (as in practice what we preach, become practitioners!)
 
 ## Development
-### [Code Reviews](CodeReview.md)
+### [Code Reviews](software/reviews.md)
 Considerations when conducting code reviews:
 * Application Security – This reminds developers to handle buffer overruns, mask or remove any internal resource references, and verifying server-side validity checks to coincide with client-side ones.  Often overlooked security items such as session information, transaction controls, developer back-doors, and hard-coded passwords are questioned.
 * Error Handling – This area is looked at to help ensure safe and user-friendly end-user experiences by questioning function caller notifications, assertions, and exception handling. It’s also important not to give too much information in errors, so that is examined as well.
