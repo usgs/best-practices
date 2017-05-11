@@ -28,11 +28,11 @@ invitation, [publicize your membership][4].
 Start Developing
 ----------------
 
-Your GitHub account is your own. You can [create public repositories][5] using
-your account. There is no limitation on what can be done in these repositories,
-however keep in mind that commits made to these repositories are public to the
-world. A best practice is to **never commit private or otherwise sensitive**
-information.
+Your GitHub account is your own. You can [create public repositories][5] within
+your user account namespace without formal approval. There is no limitation on
+what can be done in these "[scratch software][13]" repositories, however keep
+in mind that commits made to these repositories are public to the world. A best
+practice is to **never commit private or otherwise sensitive** information.
 
 While actively developing a project, it is recommended you follow an
 "[Integration Manager Workflow][5]". This workflow works especially well
@@ -69,3 +69,4 @@ to [release the software][12] to various degrees.
 [10]: ./stages.md
 [11]: ./reviews.md
 [12]: ./releases.md
+[13]: ./stages.md#scratch-software
