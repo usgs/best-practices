@@ -48,7 +48,7 @@ slightly depending on the current project state.
  - Merge (or better, have the reviewer merge) the changes into the USGS
    repository
 
-**For [approved software][6] tags...
+**For [approved software][6] tags...**
 
  - Create a release candidate reconciliation _branch_
    - Using [semantic versioning][7] this may be something like:
