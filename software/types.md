@@ -12,7 +12,7 @@ Scientific Software
 
 Scientific software implements scientific techniques, methods and/or
 algorithms. Typically (but not always) these techniques, methods and/or
-algorithsms are documented in corresponding publications.
+algorithms are documented in corresponding publications.
 
 
 Non-Scientific Software
