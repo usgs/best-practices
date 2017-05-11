@@ -36,7 +36,7 @@ information.
 
 While actively developing a project, it is recommended you follow an
 "[Integration Manager Workflow][5]". This workflow works especially well
-when collaboratively developing a project, however it also works when
+when collaboratively developing a project, however, it works when
 working as a solo developer on a project as well. This workflow encourages
 [pull requests][6] be used for integration. Pull requests facilitate peer review
 as you actively develop software.
