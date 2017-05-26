@@ -1,14 +1,13 @@
 Data Science
 ====
 
-This section will contain contact information of USGS data scientists (people that do data science or are interested in it). This was created as an action item from the 2017 Community for Data Integration Workshop.
+This section will contain contact information for USGS data scientists or those interested in it. This was created as an action item from the 2017 Community for Data Integration Workshop.
 
 Table of contents
 ===
 
   * [Examples of USGS Data Science](#examples-of-data-science-at-the-usgs)
   * [Resources](#resources)
-  * [Directory](#directory)
 
 Examples of Data Science at the USGS
 ===
@@ -19,10 +18,3 @@ Resources
 ===
 
   * [Learn R (water focus)](owi.usgs.gov/R/training-curriculum)
-
-Directory
-====
-
-Name | Email | GitHub User | Position | USGS Mission Area/Office | Expertise |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| Lindsay Carr | lcarr@usgs.gov | @lindsaycarr | Data Scientist | Water, Office of Water Information | R, training |
