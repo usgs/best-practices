@@ -17,4 +17,4 @@ Examples of Data Science at the USGS
 Resources
 ===
 
-  * [Learn R (water focus)](owi.usgs.gov/R/training-curriculum)
+  * [Learn R (water focus)](https://owi.usgs.gov/R/training-curriculum)
