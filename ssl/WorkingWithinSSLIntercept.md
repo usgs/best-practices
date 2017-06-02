@@ -60,7 +60,11 @@ update-ca-trust extract
 ```
 
 CA file:
-`/etc/pki/tls/certs/ca-bundle.trust.crt`
+`/etc/pki/tls/certs/ca-bundle.crt`
+
+> Note: there is another file `/etc/pki/tls/certs/ca-bundle.trust.crt` that
+> uses a custom OpenSSL format, which causes problems for other TLS libraries
+> like GnuTLS.
 
 
 ## OS X
