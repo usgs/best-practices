@@ -118,6 +118,13 @@ Configure ```CURL_CA_BUNDLE``` environment variable in ```$HOME/.bash_profile```
 export CURL_CA_BUNDLE=/path/to/cert.pem
 ```
 
+## Git
+Configure `GIT_SSL_CAINFO` environment variable in `$HOME/.base_profile`
+
+```sh
+export GIT_SSL_CAINFO=/path/to/cert.pem
+```
+
 ## Java
 Java applications use a system/application keystore for CA certificates in a file called "cacerts", and the DOIRootCA can be imported with the certificate file from the command line, with administrative rights:
 
