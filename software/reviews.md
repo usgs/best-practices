@@ -83,7 +83,7 @@ information is not included in the repository. This includes:
 These reviews can be **performed by any trusted person**; the reviewer does
 not necessarily need a strong scientific or programming background. When
 migrating an existing project into the USGS organization on GitHub, it is
-important to remember that the entire project history needs to be reviewd if
+important to remember that the entire project history needs to be reviewed if
 that history is to be maintained after migration.
 
 ### Applicable Software Types
