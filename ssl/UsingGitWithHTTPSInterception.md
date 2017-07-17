@@ -35,7 +35,7 @@ HTTPS is a secure protocol, but it is not as secure as SSH (see [note 2](#note-2
        * Using wired internet at home without using the VPN
        * Using wifi at a coffee shop without using the VPN
 * Download the new DOI Root Certificate Authority certificate from here
- * http://blockpage.doi.gov/images/DOIRootCA.crt
+ * http://sslhelp.doi.net/docs/DOIRootCA2.cer
 * Now configure git to trust the new DOI Root Certificate Authority certificate by running
 
   `git config --global http.sslCAInfo C:\path\to\your\DOIRootCA.crt`
@@ -68,13 +68,13 @@ Now that you are using a safe configuration, you will need to perform some foren
 * If you were an administrator of a team or organization on your git hosting site (like GitHub, etc), ensure that no members of the team/org have been added or removed. Ensure that members have the expected permissions.
 
 ## Notes
-####Note 1
+#### Note 1
 
 For example, besides git, SSL intercept can also cause issues when running wget, initializing or updating a Vagrant box, or package managers like apt, yum, or dnf.
 
-####Note 2
+#### Note 2
 
 The problem isn't so much the SSL protocol itself, but rather the fallible forest of trust that automatic SSL certificate verification relies on. Dan Goodin wrote [an excellent explanation of these problems](http://www.theregister.co.uk/2011/04/11/state_of_ssl_analysis/?page=1). By contrast, SSH keys are verified by the user on a case-by-case basis.
 
-####Note 3
-Although a user may be able to access the HTTPS Intercept appliance's certificate while outside of the DOI network, the certificate would be subject to tampering while in transit across public networks. The DOI has ignored requests to make their HTTPS Intercept appliance's certificate available securely over HTTPS. Accordingly, the best way to ensure that we are telling our programs to trust the correct cert is to ensure that our request for the appliance's certificate stays inside of the DOI's internal networks.
+#### Note 3
+Although a user may be able to access the HTTPS Intercept appliance's certificate while outside of the DOI network, the certificate would be subject to tampering while in transit across public networks. The DOI has not yet made their HTTPS Intercept appliance's certificate available securely over HTTPS. Accordingly, the best way to ensure that we are telling our programs to trust the correct cert is to ensure that our request for the appliance's certificate stays inside of the DOI's internal networks.
