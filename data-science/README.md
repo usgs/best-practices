@@ -6,15 +6,16 @@ This section will contain contact information for USGS data scientists or those 
 Table of contents
 ===
 
-  * [Examples of USGS Data Science](#examples-of-data-science-at-the-usgs)
+* [Examples of USGS Data Science](#examples-of-data-science-at-the-usgs)
   * [Resources](#resources)
 
 Examples of Data Science at the USGS
 ===
 
-  * [Data science team in Water](https://owi.usgs.gov/datascience/)
+* [Data science team in Water](https://owi.usgs.gov/datascience/)
 
 Resources
 ===
 
-  * [Learn R (water focus)](https://owi.usgs.gov/R/training-curriculum)
+* [Learn R (water focus)](https://owi.usgs.gov/R/training-curriculum)
+* Learn more about USGS High Performance Computing resources on Advanced Research Computing Gitlab Yeti [wiki](https://gitlab.cr.usgs.gov/hpc-arc/yeti-user-docs) page
