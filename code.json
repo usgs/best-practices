@@ -1,0 +1,31 @@
+{
+  "name": "Example Project",
+  "organization": "U.S. Geological Survey",
+  "description": "Example project scaffold demonstrating basic file structure",
+  "status": "Ideation",
+  "homepage": "https://github.com/usgs/best-practices/tree/project-scaffold-generic",
+  "downloadURL": "https://github.com/usgs/best-practices/archive/project-scaffold-generic.zip",
+
+  "openSourceProject": 1,
+  "license": "https://github.com/usgs/best-practices/blob/project-scaffold-generic/LICENSE.md",
+  "vcs": "git",
+  "repository": "https://github.com/usgs/best-practices.git",
+
+  "tags": [
+    "guidance",
+    "recommendations",
+    "scaffold",
+    "example"
+  ],
+  "languages": [
+    "Markdown"
+  ],
+
+  "contact": {
+    "name": "Eric Martinez",
+    "email": "emartinez@usgs.gov"
+  },
+  "updated": {
+    "metadataLastUpdated": "2017-07-31"
+  }
+}
