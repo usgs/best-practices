@@ -60,7 +60,11 @@ update-ca-trust extract
 ```
 
 CA file:
-`/etc/pki/tls/certs/ca-bundle.trust.crt`
+`/etc/pki/tls/certs/ca-bundle.crt`
+
+> Note: there is another file `/etc/pki/tls/certs/ca-bundle.trust.crt` that
+> uses a custom OpenSSL format, which causes problems for other TLS libraries
+> like GnuTLS.
 
 
 ## OS X
@@ -114,6 +118,13 @@ Configure ```CURL_CA_BUNDLE``` environment variable in ```$HOME/.bash_profile```
 export CURL_CA_BUNDLE=/path/to/cert.pem
 ```
 
+## Git
+Configure `GIT_SSL_CAINFO` environment variable in `$HOME/.base_profile`
+
+```sh
+export GIT_SSL_CAINFO=/path/to/cert.pem
+```
+
 ## Java
 Java applications use a system/application keystore for CA certificates in a file called "cacerts", and the DOIRootCA can be imported with the certificate file from the command line, with administrative rights:
 
@@ -121,13 +132,15 @@ e.g. C:\Program Files\Java\jdk1.8.0_101\jre\lib\security
 > keytool -import -file DOIRootCA.crt -keystore cacerts
 
 ## Node
-Node appears to ignore the SSL_CERT_FILE environment variable, although
-they are looking into fixing this.
-https://github.com/nodejs/node/pull/8334
+
+Older versions of Node ignore the SSL_CERT_FILE environment variable.
+This has been fixed in Node v7.7.0.
 
 Applications should attempt to configure their ssl library of choice globally
-based on the `SSL_CERT_FILE` environment variable at startup, similar to
-https://github.com/nodejs/node/issues/4175#issuecomment-238211757
+based on the `SSL_CERT_FILE` environment variable at startup.
+
+See [Node SSL Intercept Example](./node_ssl_intercept.js) for an example with
+the Node HTTPS library.
 
 ## NPM
 Configure `cafile` in `$HOME/.npmrc`
