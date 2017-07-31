@@ -119,7 +119,7 @@ export CURL_CA_BUNDLE=/path/to/cert.pem
 ```
 
 ## Git
-Configure `GIT_SSL_CAINFO` environment variable in `$HOME/.base_profile`
+Configure `GIT_SSL_CAINFO` environment variable in `$HOME/.bash_profile`
 
 ```sh
 export GIT_SSL_CAINFO=/path/to/cert.pem
