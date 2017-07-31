@@ -1,0 +1,29 @@
+{
+  "name": "Best Practices",
+  "organization": "U.S. Geological Survey",
+  "description": "Documents best practices for software development within the U.S. Geological Survey",
+  "status": "Beta",
+  "homepage": "https://usgs.github.io/best-practices/",
+  "downloadURL": "https://github.com/usgs/best-practices/archive/master.zip",
+
+  "openSourceProject": 1,
+  "license": "https://github.com/usgs/best-practices/blob/master/LICENSE.md",
+  "vcs": "git",
+  "repository": "https://github.com/usgs/best-practices.git",
+
+  "tags": [
+    "guidance",
+    "recommendations"
+  ],
+  "languages": [
+    "Markdown"
+  ],
+
+  "contact": {
+    "name": "Eric Martinez",
+    "email": "emartinez@usgs.gov"
+  },
+  "updated": {
+    "metadataLastUpdated": "2017-07-31"
+  }
+}
