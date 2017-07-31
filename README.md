@@ -45,7 +45,7 @@ different packaging conventions which should be implemented here.
 
 This file informs Git which files should not be monitored for version control.
 These are typically system or generated files (such as compiled binaries). You
-should update this file with the build artificats you wish to exclude from
+should update this file with the build artifacts you wish to exclude from
 version control.
 
 
