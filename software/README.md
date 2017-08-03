@@ -52,8 +52,8 @@ Next Steps
 ----------
 
 Learn more about different [software types][9] and [software stages][10]
-along with the corresponding [review types][11] required for each in order
-to [release the software][12] to various degrees.
+along with the corresponding [review types][11] and [metadata inventory][14]
+required for each in order to [release the software][12] to various degrees.
 
 
 
@@ -70,3 +70,4 @@ to [release the software][12] to various degrees.
 [11]: ./reviews.md
 [12]: ./releases.md
 [13]: ./stages.md#scratch-software
+[14]: ./metadata.md
