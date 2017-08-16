@@ -1,29 +1,47 @@
-{
-  "name": "Best Practices",
-  "organization": "U.S. Geological Survey",
-  "description": "Documents best practices for software development within the U.S. Geological Survey",
-  "status": "Beta",
-  "homepage": "https://usgs.github.io/best-practices/",
-  "downloadURL": "https://github.com/usgs/best-practices/archive/master.zip",
+[
+  {
+    "name": "Best Practices",
+    "organization": "U.S. Geological Survey",
+    "description": "Documents best practices for software development within the U.S. Geological Survey",
+    "version": "v0.0.0",
+    "status": "Ideation",
 
-  "openSourceProject": 1,
-  "license": "https://github.com/usgs/best-practices/blob/master/LICENSE.md",
-  "vcs": "git",
-  "repository": "https://github.com/usgs/best-practices.git",
+    "permissions": {
+      "usageType": "openSource",
+      "licenses": [
+        {
+          "name": "Public Domain, CC0-1.0",
+          "URL": "https://github.com/usgs/best-practices/blob/master/LICENSE.md"
+        }
+      ]
+    },
 
-  "tags": [
-    "guidance",
-    "recommendations"
-  ],
-  "languages": [
-    "Markdown"
-  ],
+    "homepageURL": "https://usgs.github.io/best-practices/",
+    "downloadURL": "https://github.com/usgs/best-practices/archive/master.zip",
+    "disclaimerURL": "https://github.com/usgs/best-practices/blob/master/LICENSE.md",
+    "repositoryUrl": "https://github.com/usgs/best-practices.git",
+    "vcs": "git",
 
-  "contact": {
-    "name": "Eric Martinez",
-    "email": "emartinez@usgs.gov"
-  },
-  "updated": {
-    "metadataLastUpdated": "2017-07-31"
+    "laborHours": null,
+
+    "tags": [
+      "guidance",
+      "recommendations",
+      "best practices",
+      "software development"
+    ],
+
+    "languages": [
+      "Markdown"
+    ],
+
+    "contact": {
+      "name": "Eric Martinez",
+      "email": "emartinez@usgs.gov"
+    },
+
+    "date": {
+      "metadataLastUpdated": "2017-08-16"
+    }
   }
-}
+]
