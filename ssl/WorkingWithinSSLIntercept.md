@@ -143,11 +143,16 @@ See [Node SSL Intercept Example](./node_ssl_intercept.js) for an example with
 the Node HTTPS library.
 
 ## NPM
-Configure `cafile` in `$HOME/.npmrc`
+- Configure `cafile` in `$HOME/.npmrc`
 ```
 cafile=/path/to/cert.pem
 ```
 To install packages globally via commands like `sudo npm install --global less`, you may need to add the same line to `/root/.npmrc`.
+
+- Or, configure `NPM_CONFIG_CAFILE` environment variable in `$HOME/.bash_profile`:
+```sh
+export NPM_CONFIG_CAFILE=/path/to/cert.pem
+```
 
 ## Bower
 Configure `ca` in `$HOME/.bowerrc`
