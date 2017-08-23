@@ -131,6 +131,8 @@ Java applications use a system/application keystore for CA certificates in a fil
 e.g. C:\Program Files\Java\jdk1.8.0_101\jre\lib\security
 > keytool -import -file DOIRootCA.crt -keystore cacerts
 
+The default keytool password is: changeit
+
 ## Node
 
 Older versions of Node ignore the SSL_CERT_FILE environment variable.
