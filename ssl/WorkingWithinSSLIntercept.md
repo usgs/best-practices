@@ -130,7 +130,7 @@ Java applications use a system/application keystore for CA certificates in a fil
 
 ```sh
 cd /usr/lib/jvms/jdk1.8.0_101/jre/lib/security
-keytool -import -file /path/to/DOIRootCA2.crt -alias DOIcert2 -keystore cacerts
+keytool -import -file /path/to/DOIRootCA2.crt -alias DOIRootCA2 -keystore cacerts
 ```
 
 The default keytool password is: changeit
