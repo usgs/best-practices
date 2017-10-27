@@ -1,4 +1,4 @@
-# Instructions for enabling the DOI Root Certificate for R/RStudio
+# Instructions for enabling the DOI Root Certificate for R
 
 1. Click this link to download a file called "DOIRootCA.crt": http://sslhelp.doi.net/docs/DOIRootCA2.cer
 1. Using Notepad (or your favorite text editor), open the file that gets downloaded (note: double-clicking the file will not work).
