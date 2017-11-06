@@ -108,8 +108,9 @@ export SSL_CERT_FILE=/path/to/cert.pem
 ## Anaconda python environments
 Configure `ssl_verify` variable
 ```
-conda config --set ssl_verify /path/to/cert.pem
+conda config --set ssl_verify <pathToYourFile>.pem
 ```
+The above command adds a line to your `$HOME/.condarc file` or `%USERPROFILE%\.condarc` file on Windows that looks like: `ssl_verify: <pathToYourFile>.pem`.  If you leave the USGS network, you can just comment out the `ssl_verify:` line in the `.condarc` with a `#` and uncomment when you return. If you have problems, make sure that you are using the latest version of `curl`, checking both the `conda-forge` and `anaconda` channels.
 
 ## cURL
 Configure ```CURL_CA_BUNDLE``` environment variable in ```$HOME/.bash_profile```
