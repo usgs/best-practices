@@ -118,6 +118,9 @@ Configure ```CURL_CA_BUNDLE``` environment variable in ```$HOME/.bash_profile```
 export CURL_CA_BUNDLE=/path/to/cert.pem
 ```
 
+## Docker, Docker Machine
+Detailed [here](docker_machine_ssl.md).
+
 ## Git
 Configure `GIT_SSL_CAINFO` environment variable in `$HOME/.bash_profile`
 
