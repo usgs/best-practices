@@ -130,13 +130,12 @@ export GIT_SSL_CAINFO=/path/to/cert.pem
 ```
 
 ## Java
-Java applications use a system/application keystore for CA certificates in a file called *cacerts* located in `$JAVA_HOME/jre/lib/security`. The DOIRootCA2 can be imported from the command line, with administrative rights. For example:
-
+Java applications use a system/application keystore for CA certificates in a file called *cacerts* located in `$JAVA_HOME/jre/lib/security`. The certificate can be imported from the command line, with administrative rights. For example:
+### Linux and MacOS
 ```sh
-cd /usr/lib/jvms/jdk1.8.0_101/jre/lib/security
-keytool -import -file /path/to/DOIRootCA2.crt -alias DOIRootCA2 -keystore cacerts
+cd $JAVA_HOME/lib/security
+keytool -import -file /path/to/YourCert.crt -alias YourCert -keystore cacerts
 ```
-
 The default keytool password is: changeit
 
 ## Node
