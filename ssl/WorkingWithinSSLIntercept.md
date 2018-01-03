@@ -3,6 +3,22 @@ Working within SSL Intercept
 
 This page details how to get many different programs working with SSL intercept. [Another page](UsingGitWithHTTPSInterception.md) details how to configure git.
 
+# 0) Get the SSL Intercept Root Certificate
+* Unfortunately, the certificate itself is not available securely. This means that the certificate could be tampered with if you try to download it over an untrusted network. Before you download it, verify that your machine is connected to a DOI network.
+   * OK:
+      * Plugged in to the network in a DOI building
+      * Using the VPN from home
+      * Using the VPN from a coffee shop
+      * Using the VPN from wifi in a DOI building
+    * Not OK:
+       * Using most wifi connections in DOI buildings without using the VPN.
+       * Using wifi at home without using the VPN
+       * Using wired internet at home without using the VPN
+       * Using wifi at a coffee shop without using the VPN
+       * While it is possible to download a certificate using any of these unsafe means, the file is subject to tampering in transit so if your download leaves the DOI network, you might be getting a malicious certificate instead of the real thing. Until the certificate is available securely, it is important that your download takes place over the DOI network.
+* Once you have verified that your machine is connected to a DOI network, download the new DOI Root Certificate Authority certificate from here:
+ * http://sslhelp.doi.net/docs/DOIRootCA2.cer
+
 # 1) Build complete CA file including SSL Intercept certificate
 
 CustomCA.crt must be a PEM encoded file.
@@ -20,8 +36,8 @@ of some use on RedHat (and similar) or Debian (and similar) distributions:
 ```
 #!/bin/bash
 
-WGETDEB="wget http://blockpage.doi.gov/images/DOIRootCA.crt -N -P /usr/share/ca-certificates/extra/"
-WGETRPM="wget http://blockpage.doi.gov/images/DOIRootCA.crt -N -P /etc/pki/ca-trust/source/anchors/"
+WGETDEB="wget $INTERCEPT_CERT_URL -N -P /usr/share/ca-certificates/extra/"
+WGETRPM="wget $INTERCEPT_CERT_URL -N -P /etc/pki/ca-trust/source/anchors/"
 
 if [ -f /etc/redhat-release ] ; then
   echo "Installing for Cent/RHEL 32"
