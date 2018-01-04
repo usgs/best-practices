@@ -1,6 +1,6 @@
 # Instructions for enabling the DOI Root Certificate for R
 
-1. Click this link to download a file called "DOIRootCA.crt": http://sslhelp.doi.net/docs/DOIRootCA2.cer
+1. Download the DOI Root Certificate by following step 0 in [this document](WorkingWithinSSLIntercept.md#0-get-the-ssl-intercept-root-certificate).
 1. Using Notepad (or your favorite text editor), open the file that gets downloaded (note: double-clicking the file will not work).
 1. Open R(RStudio)
 1. Run this in the Console: httr:::find_cert_bundle()
