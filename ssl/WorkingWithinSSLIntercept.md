@@ -1,7 +1,7 @@
 Working within SSL Intercept
 ============================
 
-This page details how to get many different programs working with SSL intercept. [Another page](UsingGitWithHTTPSInterception.md) details how to configure git.
+This page details how to get many different programs working within the DOI's SSL intercept solution.
 
 # 0) Get the SSL Intercept Root Certificate
 * Unfortunately, the certificate itself is not available securely. This means that the certificate could be tampered with if you try to download it over an untrusted network. Before you download it, verify that your machine is connected to a DOI network.
@@ -139,11 +139,7 @@ export CURL_CA_BUNDLE=/path/to/cert.pem
 Detailed [here](docker_machine_ssl.md).
 
 ## Git
-Configure `GIT_SSL_CAINFO` environment variable in `$HOME/.bash_profile`
-
-```sh
-export GIT_SSL_CAINFO=/path/to/cert.pem
-```
+Detailed [here](UsingGitWithHTTPSInterception.md).
 
 ## Java
 Java applications use a system/application keystore for CA certificates in a file called *cacerts* located in `$JAVA_HOME/jre/lib/security`. The certificate can be imported from the command line, with administrative rights. For example:
