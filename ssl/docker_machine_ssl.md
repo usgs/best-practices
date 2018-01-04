@@ -4,6 +4,8 @@ When working with Docker containers in a Virtual Machine on the USGS network (su
 
 The process includes copying the SSL certificate from your host up to the Docker virtual machine to a specific location and rebooting the machine. 
 
+To download the DOI SSL intercept root certificate, follow step 0 of [these instructions](WorkingWithinSSLIntercept.md#0-get-the-ssl-intercept-root-certificate). 
+
 In this example. I have the DOI SSL certificate in my ~/Downloads directory. I will create a Docker Machine instance in VirtualBox and add my SSL certificate to it. This is being done on MacOS. This also works well in Linux.
 
 Create the virtual machine using Docker Machine:
