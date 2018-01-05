@@ -21,14 +21,6 @@ This page details how to get many different programs working within the DOI's SS
 
 # 1) Build complete CA file including SSL Intercept certificate
 
-CustomCA.crt must be a PEM encoded file.
-If file is not currently PEM encoded (ascii with `-----BEGIN ...`), use openssl
-to convert:
-```
-openssl -in CustomCA.der -inform DER -out CustomCA.crt -outform PEM
-```
-
-
 ## Linux:
 
 On linux systems the `.crt` extension matters. The following script may be
