@@ -5,10 +5,7 @@ Getting Started with Software Development
 Join the USGS Organization on GitHub
 ------------------------------------
 
-If you do not yet have an account, you can [create a free account][1]. All
-GitHub accounts are personal, but if you have no preference, it is recommended
-your account username be your USGS username followed by a hyphen, followed by
-lowercase "usgs". For example: "jdoe-usgs".
+If you do not yet have an account, you can [create a free account][1].
 
 [Associate your official USGS email address with your GitHub account][2]. This
 can be done using the newly-created account (above) if you did not previously
