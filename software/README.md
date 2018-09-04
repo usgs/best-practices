@@ -14,7 +14,7 @@ have one, or it can be your old account if you have been on GitHub previously.
 web-based actions on GitHub, make sure your primary email address is set to
 your official USGS email address.
 
-Once you have a GitHub account send an email to [gs_github_admin@usgs.gov][3]
+Once you have a GitHub account send an email to [gs_help_git@usgs.gov][3]
 and request to join the organization. Include in this email your GitHub account
 name (especially important when this does not match your USGS username). An
 organization administrator (USGS employee) will invite you to the organization
@@ -56,7 +56,7 @@ required for each in order to [release the software][12] to various degrees.
 
 [1]: https://help.github.com/articles/signing-up-for-a-new-github-account/
 [2]: https://help.github.com/articles/adding-an-email-address-to-your-github-account/
-[3]: mailto:gs_github_admin@usgs.gov
+[3]: mailto:gs_help_git@usgs.gov
 [4]: https://help.github.com/articles/publicizing-or-hiding-organization-membership/
 [5]: https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows#_integration_manager
 [6]: https://help.github.com/articles/about-pull-requests/
