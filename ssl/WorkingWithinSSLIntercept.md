@@ -186,6 +186,13 @@ export PIP_CERT=/path/to/cert.pem
 ## Python
 Python uses the `SSL_CERT_FILE` environment variable (see above).
 
+## VS Code
+Visual Studio Code is based on Chromium. On Linux, Chromium uses the Mozilla Network Security Services library and database. Install [Mozilla NSS `certutil`](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/tools/NSS_Tools_certutil), then add the DOI Root CA cert.
+
+```bash
+certutil -d sql:$HOME/.pki/nssdb -A -t TC -n "doi-root-ca" -i DOIRootCA2.cer
+```
+
 ## Wget
 Configure `ca_certificate` in `$HOME/.wgetrc`
 ```
