@@ -25,7 +25,7 @@ This page details how to get many different programs working within the DOI's SS
 
 On linux systems the `.crt` extension matters. The following script may be
 of some use on RedHat (and similar) or Debian (and similar) distributions:
-```
+```sh
 #!/bin/bash
 
 INTERCEPT_CERT_URL="http://sslhelp.doi.net/docs/DOIRootCA2.cer"
@@ -188,7 +188,7 @@ Python uses the `SSL_CERT_FILE` environment variable (see above).
 ## VS Code
 Visual Studio Code is based on Chromium. On Linux, Chromium uses the Mozilla Network Security Services library and database. Install [Mozilla NSS `certutil`](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/tools/NSS_Tools_certutil), then add the DOI Root CA cert.
 
-```bash
+```sh
 certutil -d sql:$HOME/.pki/nssdb -A -t TC -n "doi-root-ca" -i DOIRootCA2.cer
 ```
 
