@@ -29,7 +29,7 @@ Thread Safeness – This section helps identify the safety of global variables a
 * Coding Conventions - Adherence to coding standards/style/conventions (add link or references) helps to ensure consistency and readability and thus improve maintainability
 
 ## Software Release
-A new [software release policy](https://www2.usgs.gov/usgs-manual/im/IM-OSQI-2016-01.html) is available from the USGS. This section has some resources for USGS employees and collaborators looking to understand how we do things in terms of review and release.
+A new [software release policy](https://www.usgs.gov/about/organization/science-support/survey-manual/im-osqi-2019-01-review-and-approval-scientific) is available from the USGS. This section has some resources for USGS employees and collaborators looking to understand how we do things in terms of review and release.
 
 * [DOIs for software](doi.md)
 
