@@ -1,7 +1,7 @@
 Working within SSL Intercept
 ============================
 
-This page details how to get many different programs working within the DOI's SSL intercept solution.
+This page details how to get many different programs working within the DOI's SSL intercept solution. For an overview of SSL Intercept in general, see [this Dell Secureworks explanation](https://www.secureworks.com/research/transitive-trust).
 
 # 0) Get the SSL Intercept Root Certificate
 * Unfortunately, the certificate itself is not available securely. This means that the certificate could be tampered with if you try to download it over an untrusted network. Before you download it, verify that your machine is connected to a DOI network.
