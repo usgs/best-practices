@@ -16,7 +16,7 @@ This page details how to get many different programs working within the DOI's SS
        * Using wired internet at home without using the VPN
        * Using wifi at a coffee shop without using the VPN
        * While it is possible to download a certificate using any of these unsafe means, the file is subject to tampering in transit so if your download leaves the DOI network, you might be getting a malicious certificate instead of the real thing. Until the certificate is available securely, it is important that your download takes place over the DOI network.
-* Once you have verified that your machine is connected to a DOI network, download the new DOI Root Certificate Authority certificate from here:
+ * Once you have verified that your machine is connected to a DOI network, download the new DOI Root Certificate Authority certificate from here:
  * http://sslhelp.doi.net/docs/DOIRootCA2.cer
 
 # 1) Build complete CA file including SSL Intercept certificate
@@ -25,26 +25,25 @@ This page details how to get many different programs working within the DOI's SS
 
 On linux systems the `.crt` extension matters. The following script may be
 of some use on RedHat (and similar) or Debian (and similar) distributions:
-```
+```sh
 #!/bin/bash
 
-WGETDEB="wget $INTERCEPT_CERT_URL -N -P /usr/share/ca-certificates/extra/"
-WGETRPM="wget $INTERCEPT_CERT_URL -N -P /etc/pki/ca-trust/source/anchors/"
+INTERCEPT_CERT_URL="http://sslhelp.doi.net/docs/DOIRootCA2.cer"
 
 if [ -f /etc/redhat-release ] ; then
   echo "Installing for Cent/RHEL 32"
   yum -y install ca-certificates
   update-ca-trust force-enable
-  $WGETRPM
+  wget $INTERCEPT_CERT_URL -N -P /etc/pki/ca-trust/source/anchors/
   update-ca-trust extract
-elif [ ! -f /etc/redhat-release ] ; then
+else
   echo "Installing for Debian/Ubuntu"
-  $WGETDEB
-  echo "extra/DOIRootCA.crt" >> /etc/ca-certificates.conf
+  wget $INTERCEPT_CERT_URL -N -P /usr/share/ca-certificates/extra/
+  echo "extra/CustomCA.crt" >> /etc/ca-certificates.conf
   update-ca-certificates
 fi
 ```
-Administrators using Chef to manage their infrastructure might also find from the [CIDA Chef Cookbook](https://github.com/USGS-CIDA/chef-cookbook-doi-ssl-filtering) (CentOS 6.x).
+Administrators using Chef to manage their infrastructure might also find from the [CIDA Chef Cookbook](https://github.com/USGS-CIDA/chef-cookbook-doi-ssl-filtering) (CentOS 6/7).
 
 ### Debian
 As root:
@@ -189,7 +188,7 @@ Python uses the `SSL_CERT_FILE` environment variable (see above).
 ## VS Code
 Visual Studio Code is based on Chromium. On Linux, Chromium uses the Mozilla Network Security Services library and database. Install [Mozilla NSS `certutil`](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/tools/NSS_Tools_certutil), then add the DOI Root CA cert.
 
-```bash
+```sh
 certutil -d sql:$HOME/.pki/nssdb -A -t TC -n "doi-root-ca" -i DOIRootCA2.cer
 ```
 
