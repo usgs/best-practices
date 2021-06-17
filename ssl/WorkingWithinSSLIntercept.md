@@ -40,7 +40,8 @@ if [ -f /etc/redhat-release ] ; then
 elif [ ! -f /etc/redhat-release ] ; then
   echo "Installing for Debian/Ubuntu"
   $WGETDEB
-  echo "extra/DOIRootCA.crt" >> /etc/ca-certificates.conf
+  openssl x509 -inform PEM -in /usr/share/ca-certificates/extra/DOIRootCA2.cer -out /usr/share/ca-certificates/extra/DOIRootCA2.crt
+  echo "extra/DOIRootCA2.crt" >> /etc/ca-certificates.conf
   update-ca-certificates
 fi
 ```
